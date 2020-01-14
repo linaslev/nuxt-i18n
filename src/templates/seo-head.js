@@ -6,8 +6,7 @@ import {
   LOCALE_ISO_KEY,
   MODULE_NAME,
   STRATEGIES,
-  strategy,
-  locales
+  strategy
 } from './options'
 
 export const nuxtI18nSeo = function () {
@@ -21,9 +20,6 @@ export const nuxtI18nSeo = function () {
   ) {
     return {}
   }
-  // In case $i18n.locales is empty
-  this.$i18n.locales = locales
-
   // Prepare html lang attribute
   const currentLocaleData = this.$i18n.locales.find(l => l[LOCALE_CODE_KEY] === this.$i18n.locale)
   const htmlAttrs = {}
