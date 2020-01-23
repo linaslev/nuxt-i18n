@@ -41,7 +41,6 @@ export const nuxtI18nSeo = function () {
           }
         } else {
           // eslint-disable-next-line no-console
-          console.warn(`[${MODULE_NAME}] Locale ISO code is required to generate alternate link`)
           return null
         }
       })
